@@ -22,7 +22,7 @@ def get_upbit_data():
     """
     query = f"""
     SELECT market, price, timestamp
-    FROM `{project_id}.crypto_data.upbit_trades`
+    FROM `{project_id}.price_data.upbit-trades`
     ORDER BY timestamp DESC
     LIMIT 100
     """
