@@ -29,4 +29,5 @@
 | 워크 플로우      | Apache Airflow |
 
 
-## 프로젝트 구조
+## 아키텍처 구조
+![Image](https://github.com/user-attachments/assets/f96b069d-0f1a-4efc-8d37-7b9180fdfda3)
