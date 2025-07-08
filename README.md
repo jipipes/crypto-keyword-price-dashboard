@@ -1,33 +1,78 @@
-# crypto-keyword-price-dashboard
+<p align="right">
+  🇬🇧 <a href="./README.ko.md">한국어</a>
+</p>
 
-## 프로젝트 설명
-"사람들의 말이 가격에 영향을 미친다면, 그 흔적은 어디서 드러날까?"
+# 📈 Crypto Keyword Price Dashboard
 
-이 프로젝트는 비트코인과 같은 특정 암호화폐에 대해 사람들이 어떤 말을 많이 하고 있는지를 다양한 곳에서 수집하고, 그 언급량과 실제 가격 변동 간의 관계를 시각화하여 보여주는 대시보드입니다.
+> "If words influence prices, where would we see the trace?"
 
-## 프로젝트 목적
-비트코인은 주식처럼 전통적인 요소(기업 실적, 금리 등)를 분석해서는 가격 변동의 요인을 파악하기 어렵습니다.
-하지만 사람들의 '말' (예를 들어 뉴스, 트윗과 같은 커뮤니티 등)이 시장 심리에 영향을 줄 수 있다는 가설에서 출발했습니다.
+This project visualizes the correlation between the frequency of crypto-related keywords and the price fluctuation of assets like Bitcoin, collected from various sources.
 
-이 프로젝트는 특정 시점에 많이 언급된 키워드와 그 시점의 가격 흐름을 함께 시각화하여 **이슈와 반응의 흐름을 한눈에 보여주는 시스템**을 만드는 것을 목표로 합니다.
+## Description
 
-## 주요 기능
-- 가격 데이터 자동 수집
-- 다양한 소스에서 많이 언급된 키워드 10개 추출
-- 특정 시점의 키워드 언급량과 가격 변화를 연동하여 시각화
-- 키워드 등장 시점과 가격 변화의 흐름을 타임라인으로 보여줌
-- 향후 Streamlit 대시보드 형태로 구현 
+This project collects and analyzes what people are saying about specific cryptocurrencies like Bitcoin from various sources. It visualizes the relationship between the number of keyword mentions and actual price movements through an interactive dashboard.
 
-## 사용 기술 스택
-| 기능            | 사용 기술 |
-|-----------------|-----------|
-| 키워드 수집     | API |
-| 가격 데이터     | Upbit API |
-| 데이터 처리     | Python, GCP 하의 Pub/Sub |
-| 시각화         | streamlit |
-| 저장           | Google Cloude Storage -> BigQuery |
-| 워크 플로우      | Apache Airflow |
+## Objective
 
+Bitcoin prices are difficult to explain with traditional indicators such as earnings or interest rates. This project is based on the hypothesis that public sentiment—expressed through keywords in news, tweets, or online communities—might influence the market.
 
-## 아키텍처 구조
+It aims to build a system that visualizes the timeline of frequently mentioned keywords alongside price trends, making issue-reaction patterns intuitive.
+
+## Key Features
+
+- Automatic collection of crypto price data
+- Extraction of top 10 frequently mentioned keywords from various sources
+- Visualization of keyword-price relationships on a timeline
+- Timeline highlights of keyword emergence and corresponding price movements
+- Planned implementation using Streamlit dashboard
+
+## Tech Stack
+
+| Function         | Technologies                           |
+|------------------|-----------------------------------------|
+| Keyword Mining   | APIs                                    |
+| Price Data       | Upbit API                               |
+| Data Processing  | Python, Google Pub/Sub                  |
+| Storage          | Google Cloud Storage → BigQuery       |
+| Visualization    | Streamlit                               |
+| Workflow         | Apache Airflow                          |
+
+## Architecture Diagram
+
 ![Image](https://github.com/user-attachments/assets/f96b069d-0f1a-4efc-8d37-7b9180fdfda3)
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.10+
+- Streamlit
+- Google Cloud SDK (if running end-to-end pipeline)
+
+### Installation
+
+```bash
+git clone https://github.com/your-id/crypto-keyword-price-dashboard.git
+cd crypto-keyword-price-dashboard
+pip install -r requirements.txt
+```
+
+### Run Dashboard
+
+```bash
+streamlit run app.py
+```
+
+## Demo Screenshot
+
+*To be added...*
+
+<!-- Example -->
+<!-- ![dashboard screenshot](./assets/screenshot.png) -->
+
+## References
+
+- [Upbit API Docs](https://docs.upbit.com/)
+- [Streamlit Documentation](https://docs.streamlit.io/)
+- [Google Cloud BigQuery](https://cloud.google.com/bigquery)
+- [Apache Airflow Docs](https://airflow.apache.org/docs/)
