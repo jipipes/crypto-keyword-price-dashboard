@@ -1,5 +1,5 @@
 <p align="right">
-  🇬🇧 <a href="./README.ko.md">한국어</a>
+  🇰🇷 <a href="./README.ko.md">한국어</a>
 </p>
 
 # 📈 Crypto Keyword Price Dashboard
